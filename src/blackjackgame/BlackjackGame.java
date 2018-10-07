@@ -18,7 +18,7 @@ public final class BlackjackGame {
     private final List<Player> players;
     private final Dealer dealer;
     private final HumanPlayer human = new HumanPlayer("Human");
-    public List<PlayingCard> playingDeck = new StandardDeck().getDeck();
+    private List<PlayingCard> playingDeck = new StandardDeck().getDeck();
     private final List<PlayingCard> discardPile = new ArrayList<>();
     private final int numberOfPlayers;
     private List<Player> activePlayers;
@@ -274,6 +274,7 @@ public final class BlackjackGame {
         view.showNonDealerHands(players); 
         view.showDealersFaceUpCard(dealer);
         view.printMoneyPerPlayer(mapMoneyPerPlayer());
+        view.printMoneyInPot(sumOfBets(players));
         boolean result = drawPhase();
         if (result) {
             determineOutcome();

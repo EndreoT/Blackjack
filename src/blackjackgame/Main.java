@@ -10,8 +10,8 @@ public class Main {
         while (true) {
             try {
                 int answer = Integer.valueOf(scanner.next());
-                if (answer < 0 || answer > 7) {
-                    System.out.println("Pick a number between 0 and 7");
+                if (answer < 0 || answer > 6) {
+                    System.out.println("Pick a number between 0 and 6");
                 } else {
                     return answer;
                 }  
@@ -29,7 +29,7 @@ public class Main {
      
         while (true) {
             game.playRound();
-            if (human.getTotalMoney() >= 0) {
+            if (human.getTotalMoney() < 0) {
                 System.out.println("Sorry, you have no money, goodbye.");
                 break;
             }

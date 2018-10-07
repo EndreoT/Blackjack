@@ -82,6 +82,10 @@ public class TextView {
         System.out.println("Money per player: " + showMoneyPerPlayer);
     }
     
+    public void printMoneyInPot(double money) {
+        System.out.println("Total money in pot: " + money);
+    }
+    
     public void playerLosesBets(Player p) {
           System.out.println(p + " loses their bet of " + p.getBetAmount());
     }
