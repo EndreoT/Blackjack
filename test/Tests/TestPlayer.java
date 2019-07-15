@@ -8,11 +8,10 @@ import blackjackgame.Suit;
 import static org.junit.Assert.*;
 import org.junit.*;
 
-
 public class TestPlayer {
-    
+
     HumanPlayer player;
-    
+
     @Before
     public void setUp() {
         player = new HumanPlayer("Player");
@@ -20,23 +19,23 @@ public class TestPlayer {
         PlayingCard p2 = new PlayingCard(Rank.JACK, Suit.SPADES);
         player.addToHand(p1, p2);
     }
-    
-    @Test 
+
+    @Test
     public void testAddToBet() {
         player.addToBet(5.0f);
         assertEquals(5.0f, player.getBetAmount(), 0);
-        assertEquals(player.getTotalMoney(), 95.0f, 0);  
+        assertEquals(player.getTotalMoney(), 95.0f, 0);
     }
-    
-    @Test 
+
+    @Test
     public void testGetCardTotals() {
         float cardTotal = player.getCardTotals();
-        assertEquals(cardTotal, 18, 0);  
+        assertEquals(cardTotal, 18, 0);
     }
-    
+
     @Test
     public void testclearHand() {
-       player.clearHand();
-       assertEquals(player.showHand().size(), 0, 0);  
-    }   
+        player.clearHand();
+        assertEquals(player.showHand().size(), 0, 0);
+    }
 }
