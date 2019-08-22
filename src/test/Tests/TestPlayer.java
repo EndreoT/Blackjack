@@ -1,9 +1,11 @@
-package Tests;
+package src.test.Tests;
 
-import blackjackgame.PlayingCard;
-import blackjackgame.HumanPlayer;
-import blackjackgame.Rank;
-import blackjackgame.Suit;
+import src.blackjackgame.PlayingCard;
+import src.blackjackgame.Rank;
+import src.blackjackgame.Suit;
+import src.blackjackgame.HumanPlayer;
+import src.blackjackgame.Rank;
+import src.blackjackgame.Suit;
 
 import static org.junit.Assert.*;
 import org.junit.*;

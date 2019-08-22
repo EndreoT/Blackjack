@@ -1,4 +1,4 @@
-package blackjackgame;
+package src.blackjackgame;
 
 //TODO allow for ace == 1 or ace == 11
 public enum Rank {

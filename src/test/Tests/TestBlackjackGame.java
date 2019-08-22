@@ -1,10 +1,10 @@
-package Tests;
+package src.test.Tests;
 
-import blackjackgame.BlackjackGame;
-import blackjackgame.PlayingCard;
-import blackjackgame.Player;
-import blackjackgame.Rank;
-import blackjackgame.Suit;
+import src.blackjackgame.BlackjackGame;
+import src.blackjackgame.PlayingCard;
+import src.blackjackgame.Player;
+import src.blackjackgame.Rank;
+import src.blackjackgame.Suit;
 
 import java.util.List;
 import java.io.InputStream;
@@ -35,7 +35,7 @@ public class TestBlackjackGame {
     @Test
     public void testConstructor() {
         assertEquals(game.getPlayers().size(), 4, 0);
-        assertEquals(game.getPlayers().get(game.getPlayers().size() - 1).getClass().getName(), "blackjackgame.Dealer");
+        assertEquals(game.getPlayers().get(game.getPlayers().size() - 1).getClass().getName(), "src.blackjackgame.Dealer");
         assertEquals(game.getPlayingDeck().size(), 52, 0);
         assertEquals(game.getDiscardPile().size(), 0, 0);
     }

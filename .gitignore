@@ -1,5 +1,7 @@
 build/
-nbproject/
 "Test Packages"/
 build.xml
 manifest.mf
+/bin/
+.classpath
+.project

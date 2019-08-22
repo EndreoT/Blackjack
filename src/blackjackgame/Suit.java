@@ -1,4 +1,4 @@
-package blackjackgame;
+package src.blackjackgame;
 
 public enum Suit {
     DIAMONDS(4, "Diamonds"), CLUBS(3, "Clubs"), HEARTS(2, "Hearts"), SPADES(1, "Spades");

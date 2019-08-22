@@ -1,4 +1,4 @@
-package blackjackgame;
+package src.blackjackgame;
 
 public class HumanPlayer extends Player {
 

@@ -1,10 +1,11 @@
-package Tests;
+package src.test.Tests;
 
-import blackjackgame.StandardDeck;
-import blackjackgame.PlayingCard;
+import src.blackjackgame.StandardDeck;
+import src.blackjackgame.PlayingCard;
 
 import static org.junit.Assert.*;
 import org.junit.*;
+import org.junit.jupiter.api.Test;
 
 public class TestStandardDeck {
     StandardDeck deck = new StandardDeck();
